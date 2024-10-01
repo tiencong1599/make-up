@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow
 
-from resource.homepage import MainPage
+from resource.homepage import CameraControl
 from resource.login import LoginPage
 # from resource.newuser import RegisterNewUser
 
@@ -14,5 +14,5 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.login_page)
 
     def switch_to_main(self):
-        self.main_page = MainPage()
+        self.main_page = CameraControl()
         self.setCentralWidget(self.main_page)
